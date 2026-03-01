@@ -8,3 +8,5 @@ these spawn items can be potions to make you jump higher or run faster
 
 
 i created the purchasable skin myself
+
+Further changes may also include changes to the overall envoirnment like after 500 meters the sky is red and the Cacti are different. More reason for the player to keep playing or want to reach further
