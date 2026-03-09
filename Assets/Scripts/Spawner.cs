@@ -41,6 +41,7 @@ public class Spawner : MonoBehaviour
         }
 
         Invoke(nameof(Spawn), Random.Range(minSpawnRate, maxSpawnRate));
+      
     }
 
 }

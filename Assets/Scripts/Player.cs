@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(CharacterController))]
 public class Player : MonoBehaviour
@@ -40,13 +41,33 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Obstacle")) {
+            jumpForce = 8f;
             GameManager.Instance.GameOver();
         }else if (other.CompareTag("Coin"))
         {
             other.gameObject.SetActive(false);
             GameManager.Instance.coins++;
 
+        }else if (other.CompareTag("Potion"))
+        {
+            other.gameObject.SetActive(false);
+            StartCoroutine(JumpBoostCoroutine());
         }
+
+
+        IEnumerator JumpBoostCoroutine()
+        {
+            jumpForce += 2;
+            Debug.Log("yo");
+
+            yield return new WaitForSeconds(15);
+
+            jumpForce -= 2;
+
+            Debug.Log(jumpForce);
+        }
+
     }
+    
 
 }

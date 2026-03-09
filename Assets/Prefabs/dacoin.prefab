@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3926917011630731406}
   - component: {fileID: -507879447837919708}
   - component: {fileID: -6241628547044103965}
+  - component: {fileID: -797292797259201965}
   m_Layer: 0
   m_Name: dacoin
   m_TagString: Coin
@@ -126,3 +127,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4aa01bef04456d489a93b8adc7fec01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-797292797259201965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3926917011630731405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a0a4a3e568691d40b504518f44a9e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimatedSprite
+  sprites:
+  - {fileID: 8980438598086963491, guid: ede4b03d4049f481a80ce6756418b385, type: 3}
+  - {fileID: 3344596444136561788, guid: ede4b03d4049f481a80ce6756418b385, type: 3}
+  - {fileID: 1158639269171017508, guid: ede4b03d4049f481a80ce6756418b385, type: 3}
+  - {fileID: -6541766136644436370, guid: ede4b03d4049f481a80ce6756418b385, type: 3}
+  newskin:
+  - {fileID: 8980438598086963491, guid: ede4b03d4049f481a80ce6756418b385, type: 3}
+  - {fileID: 3344596444136561788, guid: ede4b03d4049f481a80ce6756418b385, type: 3}
+  - {fileID: 1158639269171017508, guid: ede4b03d4049f481a80ce6756418b385, type: 3}
+  - {fileID: -6541766136644436370, guid: ede4b03d4049f481a80ce6756418b385, type: 3}
+  boolSkin: 0

@@ -7,6 +7,7 @@ TagManager:
   - Obstacle
   - Target
   - Coin
+  - Potion
   layers:
   - Default
   - TransparentFX
