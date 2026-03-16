@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     [SerializeField] private AnimatedSprite animatedSprite;
+    public AudioSource deathsound;
 
     public float initialGameSpeed = 5f;
     public float gameSpeedIncrease = 0.1f;
@@ -81,6 +82,10 @@ public class GameManager : MonoBehaviour
         gameSpeed = 0f;
         enabled = false;
 
+        StartCoroutine(
+         FindObjectOfType<CameraShake>().Shake(0.2f, 0.3f)
+     );
+        deathsound.Play();
         player.gameObject.SetActive(false);
         spawner.gameObject.SetActive(false);
         gameOverText.gameObject.SetActive(true);

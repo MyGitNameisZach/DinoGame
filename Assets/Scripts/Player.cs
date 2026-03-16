@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     private CharacterController character;
     private GameManager gameManager;
+    public AudioSource coinSound;
     private Vector3 direction;
 
     public float jumpForce = 8f;
@@ -47,6 +48,7 @@ public class Player : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             GameManager.Instance.coins++;
+            coinSound.Play();
 
         }else if (other.CompareTag("Potion"))
         {
